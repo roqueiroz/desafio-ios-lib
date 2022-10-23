@@ -14,10 +14,58 @@
             filePath = "desafio-ios-lib/Features/Ticket/TicketService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "getTicket(deviceInfo:completion:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D5B97C52-597E-4ADE-A344-3437EF692617 - 98d873c2c241d1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;desafio_ios_lib.TicketResponse&gt;, Swift.Optional&lt;desafio_ios_lib.Error&gt;) -&gt; () in desafio_ios_lib.TicketService.getTicket(deviceInfo: Foundation.Data, completion: (desafio_ios_lib.TicketResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "desafio_ios_lib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigo.goncalves/Documents/Projetos/Testes/desafio-ios-lib/desafio-ios-lib/desafio-ios-lib/Features/Ticket/TicketService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "262">
+               </Location>
+               <Location
+                  uuid = "D5B97C52-597E-4ADE-A344-3437EF692617 - 98d873c2c241ade"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;desafio_ios_lib.TicketResponse&gt;, Swift.Optional&lt;desafio_ios_lib.Error&gt;) -&gt; () in desafio_ios_lib.TicketService.getTicket(deviceInfo: Foundation.Data, completion: (desafio_ios_lib.TicketResponse) -&gt; ()) -&gt; ()"
+                  moduleName = "desafio_ios_lib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigo.goncalves/Documents/Projetos/Testes/desafio-ios-lib/desafio-ios-lib/desafio-ios-lib/Features/Ticket/TicketService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "262">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9AFF3958-9DDF-439A-BFC2-EEA266F38D40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "desafio_ios_libTests/TicketServiceSpy.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "getTicket(completion:)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

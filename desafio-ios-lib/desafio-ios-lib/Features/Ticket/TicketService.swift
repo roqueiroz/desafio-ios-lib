@@ -9,8 +9,6 @@ import Foundation
 
 private let urlStr = "https://run.mocky.io/v3/ca30b574-72b5-40ed-b83c-63e547378ebe"
 
-
-
 protocol TicketServiceResponse: AnyObject {
     typealias completionCallBack <T: Decodable> = (_ result: TicketResponse) -> Void
 }
