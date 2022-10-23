@@ -7,9 +7,8 @@
 
 import Foundation
 
-
 final internal class ApiRequestMaker {
-    
+   
     static public var shared = ApiRequestMaker()
     
     public func request<T: Decodable>(from endpoint: URL, method: HttpMethod, data: Data?, type: T.Type, completion: @escaping completionCallback<T>) throws {

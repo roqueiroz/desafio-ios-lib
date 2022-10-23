@@ -17,11 +17,15 @@
 		30E20A902904DBD0008FC3DB /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20A8F2904DBD0008FC3DB /* DeviceInfo.swift */; };
 		30E20A922904DC46008FC3DB /* ExtensionDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20A912904DC46008FC3DB /* ExtensionDevice.swift */; };
 		30E20A96290593C7008FC3DB /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20A95290593C7008FC3DB /* Enums.swift */; };
-		30E20A9F29059A32008FC3DB /* desafio_ios_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E20A6E2904B088008FC3DB /* desafio_ios_lib.framework */; platformFilter = ios; };
+		30E20AB62905AAB9008FC3DB /* desafio_ios_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E20A6E2904B088008FC3DB /* desafio_ios_lib.framework */; };
+		30E20ABF2905AAE6008FC3DB /* TicketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20ABE2905AAE6008FC3DB /* TicketTest.swift */; };
+		30E20AC22905AC3E008FC3DB /* TicketServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20AC12905AC3E008FC3DB /* TicketServiceTest.swift */; };
+		30E20AC42905AD64008FC3DB /* TicketServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20AC32905AD64008FC3DB /* TicketServiceSpy.swift */; };
+		30E20AC62905B0AD008FC3DB /* TicketServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20AC52905B0AD008FC3DB /* TicketServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		30E20AA029059A32008FC3DB /* PBXContainerItemProxy */ = {
+		30E20AB72905AAB9008FC3DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 30E20A652904B088008FC3DB /* Project object */;
 			proxyType = 1;
@@ -42,7 +46,11 @@
 		30E20A8F2904DBD0008FC3DB /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		30E20A912904DC46008FC3DB /* ExtensionDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDevice.swift; sourceTree = "<group>"; };
 		30E20A95290593C7008FC3DB /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		30E20A9B29059A32008FC3DB /* desafio_ios_libTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desafio_ios_libTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E20AB22905AAB9008FC3DB /* desafio_ios_libTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desafio_ios_libTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E20ABE2905AAE6008FC3DB /* TicketTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTest.swift; sourceTree = "<group>"; };
+		30E20AC12905AC3E008FC3DB /* TicketServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketServiceTest.swift; sourceTree = "<group>"; };
+		30E20AC32905AD64008FC3DB /* TicketServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketServiceSpy.swift; sourceTree = "<group>"; };
+		30E20AC52905B0AD008FC3DB /* TicketServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketServiceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +61,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30E20A9829059A32008FC3DB /* Frameworks */ = {
+		30E20AAF2905AAB9008FC3DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E20A9F29059A32008FC3DB /* desafio_ios_lib.framework in Frameworks */,
+				30E20AB62905AAB9008FC3DB /* desafio_ios_lib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				30E20A702904B088008FC3DB /* desafio-ios-lib */,
+				30E20AB32905AAB9008FC3DB /* desafio_ios_libTests */,
 				30E20A6F2904B088008FC3DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				30E20A6E2904B088008FC3DB /* desafio_ios_lib.framework */,
-				30E20A9B29059A32008FC3DB /* desafio_ios_libTests.xctest */,
+				30E20AB22905AAB9008FC3DB /* desafio_ios_libTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +147,41 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		30E20AB32905AAB9008FC3DB /* desafio_ios_libTests */ = {
+			isa = PBXGroup;
+			children = (
+				30E20ABC2905AACC008FC3DB /* Ticket */,
+			);
+			path = desafio_ios_libTests;
+			sourceTree = "<group>";
+		};
+		30E20ABC2905AACC008FC3DB /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				30E20AC02905AB5B008FC3DB /* Spy */,
+				30E20ABD2905AAD3008FC3DB /* Mock */,
+				30E20ABE2905AAE6008FC3DB /* TicketTest.swift */,
+				30E20AC12905AC3E008FC3DB /* TicketServiceTest.swift */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		30E20ABD2905AAD3008FC3DB /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				30E20AC52905B0AD008FC3DB /* TicketServiceMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		30E20AC02905AB5B008FC3DB /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				30E20AC32905AD64008FC3DB /* TicketServiceSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -170,22 +214,22 @@
 			productReference = 30E20A6E2904B088008FC3DB /* desafio_ios_lib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		30E20A9A29059A32008FC3DB /* desafio_ios_libTests */ = {
+		30E20AB12905AAB9008FC3DB /* desafio_ios_libTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30E20AA229059A33008FC3DB /* Build configuration list for PBXNativeTarget "desafio_ios_libTests" */;
+			buildConfigurationList = 30E20AB92905AAB9008FC3DB /* Build configuration list for PBXNativeTarget "desafio_ios_libTests" */;
 			buildPhases = (
-				30E20A9729059A32008FC3DB /* Sources */,
-				30E20A9829059A32008FC3DB /* Frameworks */,
-				30E20A9929059A32008FC3DB /* Resources */,
+				30E20AAE2905AAB9008FC3DB /* Sources */,
+				30E20AAF2905AAB9008FC3DB /* Frameworks */,
+				30E20AB02905AAB9008FC3DB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				30E20AA129059A32008FC3DB /* PBXTargetDependency */,
+				30E20AB82905AAB9008FC3DB /* PBXTargetDependency */,
 			);
 			name = desafio_ios_libTests;
 			productName = desafio_ios_libTests;
-			productReference = 30E20A9B29059A32008FC3DB /* desafio_ios_libTests.xctest */;
+			productReference = 30E20AB22905AAB9008FC3DB /* desafio_ios_libTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -202,8 +246,9 @@
 						CreatedOnToolsVersion = 14.0.1;
 						LastSwiftMigration = 1400;
 					};
-					30E20A9A29059A32008FC3DB = {
+					30E20AB12905AAB9008FC3DB = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -221,7 +266,7 @@
 			projectRoot = "";
 			targets = (
 				30E20A6D2904B088008FC3DB /* desafio-ios-lib */,
-				30E20A9A29059A32008FC3DB /* desafio_ios_libTests */,
+				30E20AB12905AAB9008FC3DB /* desafio_ios_libTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,7 +280,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30E20A9929059A32008FC3DB /* Resources */ = {
+		30E20AB02905AAB9008FC3DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,21 +305,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30E20A9729059A32008FC3DB /* Sources */ = {
+		30E20AAE2905AAB9008FC3DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E20AC42905AD64008FC3DB /* TicketServiceSpy.swift in Sources */,
+				30E20AC62905B0AD008FC3DB /* TicketServiceMock.swift in Sources */,
+				30E20ABF2905AAE6008FC3DB /* TicketTest.swift in Sources */,
+				30E20AC22905AC3E008FC3DB /* TicketServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		30E20AA129059A32008FC3DB /* PBXTargetDependency */ = {
+		30E20AB82905AAB9008FC3DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			platformFilter = ios;
 			target = 30E20A6D2904B088008FC3DB /* desafio-ios-lib */;
-			targetProxy = 30E20AA029059A32008FC3DB /* PBXContainerItemProxy */;
+			targetProxy = 30E20AB72905AAB9008FC3DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -462,40 +510,47 @@
 			};
 			name = Release;
 		};
-		30E20AA329059A33008FC3DB /* Debug */ = {
+		30E20ABA2905AAB9008FC3DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U7B2G7Z4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rqueiroz.desafio-ios-libTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		30E20AA429059A33008FC3DB /* Release */ = {
+		30E20ABB2905AAB9008FC3DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U7B2G7Z4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "rqueiroz.desafio-ios-libTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,11 +578,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30E20AA229059A33008FC3DB /* Build configuration list for PBXNativeTarget "desafio_ios_libTests" */ = {
+		30E20AB92905AAB9008FC3DB /* Build configuration list for PBXNativeTarget "desafio_ios_libTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30E20AA329059A33008FC3DB /* Debug */,
-				30E20AA429059A33008FC3DB /* Release */,
+				30E20ABA2905AAB9008FC3DB /* Debug */,
+				30E20ABB2905AAB9008FC3DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
